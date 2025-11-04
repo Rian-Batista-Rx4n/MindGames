@@ -1,0 +1,69 @@
+:root {
+    --color-one: white;
+    --color-two: black;
+    --color-three: lime;
+    --color-four: red;
+    --color-five: yellow;
+    --back-color-one: #0d1117;
+    --back-color-two: #161b22;
+    --back-color-three: #21262d;
+    --back-color-four: #21262d;
+    --text-color-one: #58a6ff;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background: var(--back-color-one);
+    color: var(--color-one);
+}
+
+header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    background: var(--back-color-two);
+    justify-content: space-between;
+    text-align: center;
+    border: solid 2px var(--back-color-three);
+}
+
+h1 {
+    color: var(--text-color-one);
+    margin: 6px 0 16px 8px;
+}
+
+.select-game-menu {
+    width: 80%;
+    padding: 4px 0 4px 0;
+    background: var(--back-color-two);
+    border: 1px solid var(--back-color-three);
+    border-radius: 16px;
+    margin: 16px auto;
+    display: grid;
+}
+
+.games-btn {
+    width: 96px;
+    height: 32px;
+    padding: 4px;
+    margin: 4px;
+    background: var(--back-color-three);
+    text-align: center;
+    border: 2px solid var(--back-color-one);
+    border-radius: 8px;
+    line-height: 16px;
+    transition: ease 0.1s;
+    cursor: pointer;
+}
+
+.games-btn:hover {
+    transform: scale(1.05);
+    border: 2px solid blue;
+    background: var(--back-color-four);
+}
