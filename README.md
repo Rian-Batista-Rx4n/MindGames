@@ -16,7 +16,7 @@ Each game was created with **pure HTML, CSS, and JavaScript**, with a lightweigh
 ## 🕹️ How to Play
 
 1. Access the main menu:
-link comming soon...
+[Mind Games](https://rian-batista-rx4n.github.io/MindGames/)
 
 2. Choose a game.
 
