@@ -44,7 +44,7 @@ function handleClick(index) {
             score += correctClicks * basePoints;
 
             // Se o tabuleiro ainda tiver espaço, adiciona mais uma figura
-            if (usedPositions.length < (totalCells + 3)) {
+            if (usedPositions.length < totalCells) {
                 spawnFigure();
             } else {
                 // Se encheu, reseta mas mantém o multiplicador
@@ -136,9 +136,9 @@ function endGame() {
 function saveScore() {
     let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
 
-    let playerName = prompt(">> ", "AAA");
-    if (!playerName) playerName = "AAA";
-    playerName = playerName.substring(0, 3).toUpperCase();
+    let playerName = prompt("Local Score Register", "Player_1");
+    if (!playerName) playerName = "Player_1";
+    playerName = playerName.substring(0, 12).toUpperCase();
 
     leaderboard.push({ name: playerName, score });
     leaderboard.sort((a, b) => b.score - a.score);
