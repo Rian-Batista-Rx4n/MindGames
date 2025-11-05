@@ -21,13 +21,11 @@ let correctClicks = 0;
 let score = 0;
 const basePoints = 10;
 
-// Inicializa o jogo
-startGame();
-
 function startGame() {
     resetBoard();
     spawnFigure();
     updateScore();
+    startTimer();
 }
 
 // Adiciona eventos a todas as células
@@ -132,7 +130,6 @@ function endGame() {
     saveScore();
     resetBoard();
     showLeaderboard();
-    startTimer();
 }
 
 // SALVAR PONTUAÇÃO DO JOGADOR LOCAL
@@ -158,6 +155,7 @@ function showLeaderboard() {
     leaderboard.forEach((entry, i) => {
         console.log(`${i + 1}. ${entry.name} - ${entry.score}`);
     });
+    startGame()
 }
 
-
+startGame()
