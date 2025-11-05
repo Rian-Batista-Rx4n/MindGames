@@ -44,7 +44,7 @@ function handleClick(index) {
             score += correctClicks * basePoints;
 
             // Se o tabuleiro ainda tiver espaço, adiciona mais uma figura
-            if (usedPositions.length < totalCells) {
+            if (usedPositions.length < (totalCells + 3)) {
                 spawnFigure();
             } else {
                 // Se encheu, reseta mas mantém o multiplicador
